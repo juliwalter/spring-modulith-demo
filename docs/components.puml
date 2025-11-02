@@ -14,8 +14,8 @@ Container_Boundary("App.App_boundary", "App", $tags="") {
   Component(App.App.Notification, "Notification", $techn="Module", $descr="", $tags="", $link="")
 }
 
-Rel(App.App.Users, App.App.Common, "depends on", $techn="", $tags="", $link="")
 Rel(App.App.Notification, App.App.Users, "listens to", $techn="", $tags="", $link="")
+Rel(App.App.Users, App.App.Common, "depends on", $techn="", $tags="", $link="")
 
 SHOW_LEGEND(true)
 @enduml

@@ -4,4 +4,6 @@
 |`org.example.config`
 |Spring components
 |* `o.e.c.AsyncConfig`
+* `o.e.c.TestConfig`
+* `o.e.c.TestConfig.MyTestService`
 |===
