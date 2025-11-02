@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  modulith-demo-database:
+    image: postgres:16
+    container_name: modulith-demo-database
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: modulith-demo
+    ports:
+      - "9999:5432"

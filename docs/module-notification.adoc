@@ -1,0 +1,12 @@
+[%autowidth.stretch, cols="h,a"]
+|===
+|Base package
+|`org.example.notification`
+|Spring components
+|_Services_
+
+* `o.e.n.NotificationService` (via `o.e.n.service.NotificationServiceImpl`)
+|Events listened to
+|* `o.e.u.UserCreatedEvent` (async) 
+* `o.e.u.UserDeletedEvent` (async) 
+|===

@@ -1,0 +1,19 @@
+== App
+plantuml::components.puml[,,format=svg]
+
+== Common
+plantuml::module-common.puml[,,format=svg]
+include::module-common.adoc[]
+
+== Config
+plantuml::module-config.puml[,,format=svg]
+include::module-config.adoc[]
+
+== Users
+plantuml::module-users.puml[,,format=svg]
+include::module-users.adoc[]
+
+== Notification
+plantuml::module-notification.puml[,,format=svg]
+include::module-notification.adoc[]
+

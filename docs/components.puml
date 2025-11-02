@@ -1,0 +1,21 @@
+@startuml
+set separator none
+title App
+
+top to bottom direction
+
+!include <C4/C4>
+!include <C4/C4_Context>
+!include <C4/C4_Component>
+
+Container_Boundary("App.App_boundary", "App", $tags="") {
+  Component(App.App.Common, "Common", $techn="Module", $descr="", $tags="", $link="")
+  Component(App.App.Users, "Users", $techn="Module", $descr="", $tags="", $link="")
+  Component(App.App.Notification, "Notification", $techn="Module", $descr="", $tags="", $link="")
+}
+
+Rel(App.App.Users, App.App.Common, "depends on", $techn="", $tags="", $link="")
+Rel(App.App.Notification, App.App.Users, "listens to", $techn="", $tags="", $link="")
+
+SHOW_LEGEND(true)
+@enduml
